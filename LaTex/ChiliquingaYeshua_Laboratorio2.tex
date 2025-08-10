@@ -1,0 +1,161 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{helvet}
+\usepackage{colortbl}
+\usepackage{amssymb}  % Para símbolos adicionales como \checkmark
+\usepackage{url}  % Para formatear URLs en la bibliografía
+\usepackage[12pt]{extsizes}  % Para tamaños de letra personalizados
+\usepackage{anyfontsize}     % Para cualquier tamaño de letra
+\usepackage{fancyhdr}        % Para controlar encabezados y pies de página
+\pagestyle{empty}           % Elimina la numeración de páginas
+
+% Configuración de tamaños de sección
+\usepackage{titlesec}
+\titleformat*{\section}{\fontsize{12}{14}\selectfont\bfseries}
+\titleformat*{\subsection}{\fontsize{11}{13}\selectfont\bfseries}
+\titleformat*{\subsubsection}{\fontsize{11}{13}\selectfont\bfseries\itshape}
+
+% Configuración de la página
+\geometry{
+    a4paper,
+    left=1.5cm,    % Margen izquierdo reducido
+    right=1.5cm,   % Margen derecho reducido
+    top=2cm,       % Margen superior
+    bottom=2cm,    % Margen inferior
+}
+
+% Usar Helvetica (similar a Arial) como fuente principal
+\renewcommand{\familydefault}{\sfdefault}
+
+% Definir colores
+\definecolor{graycell}{RGB}{217, 217, 217} % #d9d9d9
+
+\begin{document}
+
+% Tabla con estructura exacta
+\begin{table}[h]
+    \centering
+    \arrayrulecolor{black}
+    \setlength{\arrayrulewidth}{0.5pt}
+    \renewcommand{\arraystretch}{1.5}
+    \small
+    
+    % Definición de columnas con anchos ajustados
+    \begin{tabular}{|p{3.5cm}|p{4.8cm}|p{2.0cm}|p{1.8cm}|p{2.0cm}|p{1.8cm}|}
+    \hline
+    % Fila 1
+    \rowcolor{graycell}\textbf{DEPARTAMENTO:} & 
+    \cellcolor{white}\textbf{CIENCIAS DE LA COMPUTACIÓN} & 
+    \textbf{CARRERA:} & 
+    \multicolumn{3}{p{5.6cm}|}{\cellcolor{white}\textbf{INGENIERÍA DE SOFTWARE}} \\
+    \hline
+    % Fila 2
+    \rowcolor{graycell}\textbf{ASIGNATURA:} & 
+    \cellcolor{white}Pruebas de Software & 
+    \textbf{NIVEL:} & 
+    \cellcolor{white}6to & 
+    \cellcolor{graycell}\textbf{FECHA:} & 
+    \cellcolor{white}01/08/25 \\
+    \hline
+    % Fila 3
+    \rowcolor{graycell}\textbf{DOCENTE:} & 
+    \cellcolor{white}Ing. Luis Castillo, Mgtr. & 
+    \textbf{PRÁCTICA N°:} & 
+    \cellcolor{white}1 & 
+    \cellcolor{graycell}\textbf{CALIF.:} & 
+    \cellcolor{white} \\
+    \hline
+    \end{tabular}
+\end{table}
+\vspace{1cm}
+
+% Título (TL 14):Título o tema de la práctica con una extensión máxima de 20 palabras. Tamaño de letra (TL) 14
+
+\begin{center}
+    \fontsize{14}{16}\selectfont\textbf{Aplicación de pruebas del sistema reservas}
+\end{center}
+
+% Nombre del estudiante (TL 12)
+\begin{center}
+    \fontsize{12}{14}\selectfont\textbf{Yeshua Amador Chiliquinga Amaya}
+    \vspace{0.5cm}
+    \rule{\textwidth}{0.5pt}
+\end{center}
+
+% Resumen (TL 11): Se expone de manera clara lo realizado en el laboratorio, su propósito y las conclusiones a las que se llegó, se recomienda mínimo 8 líneas y máximo 15 líneas. (TL11)
+
+\begin{center}
+    \fontsize{11}{13}\selectfont\textbf{RESUMEN}
+    
+    \vspace{0.5cm}
+    \parbox{0.9\textwidth}{\centering
+    
+    }
+\end{center}
+\vspace{0.5cm}
+
+%Palabras Claves: se escriben las palabras más importantes de la práctica o experimento (máximo tres).
+
+\textbf{Palabras Claves:} 
+
+\vspace{1cm}
+    
+%Se incluyen aspectos relacionados con los objetivos, resaltando la realización de las actividades en función al manejo y disciplina en el laboratorio.
+\section*{1. INTRODUCCIÓN}
+
+
+%2.1	Describir los alcances o metas de la práctica
+\section*{2. OBJETIVOS}
+
+\subsection*{2.1 Objetivo General}
+
+
+\subsection*{2.2 Objetivos Específicos}
+\begin{itemize}
+    \item 
+\end{itemize}
+
+%Dependiendo de las necesidades se describen los conceptos de las herramientas, tecnologías, frameworks, librerías, etc., utilizados en la práctica de laboratorio.
+
+\section*{3. MARCO TEÓRICO}
+
+\subsection*{3.1 Entorno de Desarrollo}
+\begin{itemize}
+    \item 
+\end{itemize}
+
+%Se explicarán el desarrollo de la práctica o experimento realizado en clase con el docente.
+\section*{4. DESCRIPCIÓN DEL PROCEDIMIENTO}
+
+%Se debe explicar las preguntas y/o actividades prácticas extra enviadas por el docente.
+\section*{5. PREGUNTAS/ACTIVIDADES}
+
+%Sintetizar los resultados de acuerdo a los objetivos planteados.
+\section*{6. CONCLUSIONES}
+
+\begin{itemize}[leftmargin=*]
+    \item 
+\end{itemize}
+
+%Recomendaciones de acuerdo a los objetivos planteados
+\section*{7. RECOMENDACIONES}
+
+\begin{itemize}[leftmargin=*]
+    \item 
+\end{itemize}
+
+%Autor o autores. Año. Título del artículo, Nombre de la Revista, Editorial, Páginas o ubicación de la consulta. Fecha de consulta
+\section*{8. BIBLIOGRAFÍA}
+
+\noindent\hangindent=1.5em
+[1] OWASP Foundation, ``OWASP Testing Guide v4.2'', 2021. [En línea]. Disponible: \url{https://owasp.org/www-project-web-security-testing-guide/}
+
+\end{document}
