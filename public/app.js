@@ -4,4 +4,4 @@ function sum(a, b) {
   return a + b;
 }
 
-document.getElementById("out").textContent = `La suma de 2 y 3 es: ${sum(2, 3)}`;
+document.getElementById('out').textContent = `La suma de 2 y 3 es: ${sum(2, 3)}`;
